@@ -762,10 +762,10 @@ progress::-webkit-progress-bar {
    LIGHT MODE SPECIFIC STYLES
    ============================================ */
 
-/* Dark sidebar (like HI3 UI) */
+/* Ribbon - orange accent */
 .theme-light .workspace-ribbon {
-  background-color: var(--color-dark);
-  border-right: 2px solid var(--color-orange);
+  background-color: var(--color-orange);
+  border-right: none;
 }
 
 .theme-light .workspace-ribbon .side-dock-ribbon-action {
@@ -773,62 +773,73 @@ progress::-webkit-progress-bar {
 }
 
 .theme-light .workspace-ribbon .side-dock-ribbon-action:hover {
-  color: var(--color-orange);
-  background-color: rgba(255, 107, 53, 0.2);
+  color: #FFFFFF;
+  background-color: var(--color-orange-dark);
 }
 
-/* Left sidebar - dark background with light text */
+/* Left sidebar - light background with bold colors */
 .theme-light .mod-left-split {
-  background-color: var(--color-dark);
+  background-color: #F5F5F5;
 }
 
 .theme-light .mod-left-split .workspace-tab-header-container {
-  background-color: var(--color-dark);
-  border-bottom: 2px solid var(--color-orange);
+  background-color: #F5F5F5;
+  border-bottom: 3px solid var(--color-orange);
 }
 
 .theme-light .mod-left-split .workspace-tab-header {
-  color: #FFFFFF;
+  color: var(--color-dark);
 }
 
 .theme-light .mod-left-split .workspace-tab-header.is-active {
   color: var(--color-orange);
-}
-
-.theme-light .mod-left-split .workspace-leaf-content {
-  background-color: var(--color-dark);
-}
-
-/* File explorer - light text on dark */
-.theme-light .nav-folder-title {
-  color: #e0e0e0;
   font-weight: 600;
 }
 
+.theme-light .mod-left-split .workspace-leaf-content {
+  background-color: #F5F5F5;
+}
+
+/* File explorer - bold colors */
+.theme-light .nav-folder-title {
+  color: var(--color-dark) !important;
+  font-weight: 700;
+}
+
 .theme-light .nav-folder-title:hover {
-  color: var(--color-orange);
+  color: var(--color-orange) !important;
+  background-color: rgba(255, 107, 53, 0.1);
+}
+
+.theme-light .nav-folder-title-content {
+  color: var(--color-dark);
 }
 
 .theme-light .nav-file-title {
-  color: #c0c0c0;
+  color: #333333 !important;
 }
 
 .theme-light .nav-file-title:hover {
-  color: var(--color-cyan);
+  color: var(--color-cyan-dark) !important;
+  background-color: rgba(0, 206, 209, 0.1);
+}
+
+.theme-light .nav-file-title-content {
+  color: #333333;
 }
 
 .theme-light .nav-folder.mod-root > .nav-folder-title {
-  color: var(--color-orange);
+  color: var(--color-orange) !important;
   font-weight: 700;
 }
 
 .theme-light .nav-folder-collapse-indicator {
-  color: #888888;
+  color: var(--color-orange);
 }
 
 /* Tree connector lines */
 .theme-light .nav-folder-children {
-  border-left-color: #3d3d3d;
+  border-left-color: var(--color-orange);
 }
 
 /* Tags - solid cyan */
@@ -974,11 +985,11 @@ progress::-webkit-progress-bar {
   background-color: rgba(255, 107, 53, 0.25);
 }
 
-/* Status bar - dark like HI3 */
+/* Status bar - light with cyan accent */
 .theme-light .status-bar {
-  background-color: var(--color-dark);
-  border-top: 2px solid var(--color-cyan);
-  color: #FFFFFF;
+  background-color: #F5F5F5;
+  border-top: 3px solid var(--color-cyan);
+  color: var(--color-dark);
 }
 
 /* Embed */
