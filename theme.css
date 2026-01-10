@@ -777,7 +777,11 @@ progress::-webkit-progress-bar {
   background-color: rgba(255, 107, 53, 0.2);
 }
 
-/* Left sidebar header */
+/* Left sidebar - dark background with light text */
+.theme-light .mod-left-split {
+  background-color: var(--color-dark);
+}
+
 .theme-light .mod-left-split .workspace-tab-header-container {
   background-color: var(--color-dark);
   border-bottom: 2px solid var(--color-orange);
@@ -791,14 +795,40 @@ progress::-webkit-progress-bar {
   color: var(--color-orange);
 }
 
-/* File explorer */
+.theme-light .mod-left-split .workspace-leaf-content {
+  background-color: var(--color-dark);
+}
+
+/* File explorer - light text on dark */
 .theme-light .nav-folder-title {
+  color: #e0e0e0;
   font-weight: 600;
+}
+
+.theme-light .nav-folder-title:hover {
+  color: var(--color-orange);
+}
+
+.theme-light .nav-file-title {
+  color: #c0c0c0;
+}
+
+.theme-light .nav-file-title:hover {
+  color: var(--color-cyan);
 }
 
 .theme-light .nav-folder.mod-root > .nav-folder-title {
   color: var(--color-orange);
   font-weight: 700;
+}
+
+.theme-light .nav-folder-collapse-indicator {
+  color: #888888;
+}
+
+/* Tree connector lines */
+.theme-light .nav-folder-children {
+  border-left-color: #3d3d3d;
 }
 
 /* Tags - solid cyan */
