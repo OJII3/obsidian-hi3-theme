@@ -299,8 +299,8 @@
   --divider-color: #2d2d2d;
   --divider-color-hover: var(--color-orange-primary);
 
-  --ribbon-background: #0d0d0d;
-  --ribbon-background-collapsed: var(--background-primary);
+  --ribbon-background: var(--color-orange-primary);
+  --ribbon-background-collapsed: var(--color-orange-dark);
 
   --titlebar-background: #0d0d0d;
   --titlebar-background-focused: #141414;
@@ -659,6 +659,29 @@ progress::-webkit-progress-bar {
 .workspace-ribbon {
   background-color: var(--ribbon-background);
   border-right: 1px solid var(--background-modifier-border);
+}
+
+/* Dark mode ribbon styling */
+.theme-dark .workspace-ribbon {
+  border-right: none;
+}
+
+.theme-dark .workspace-ribbon .side-dock-ribbon-action {
+  color: #FFFFFF;
+}
+
+.theme-dark .workspace-ribbon .side-dock-ribbon-action:hover {
+  color: #FFFFFF;
+  background-color: var(--color-orange-dark);
+}
+
+.theme-dark .workspace-ribbon-collapse-btn {
+  color: #FFFFFF;
+}
+
+.theme-dark .workspace-ribbon-collapse-btn:hover {
+  color: #FFFFFF;
+  background-color: var(--color-orange-dark);
 }
 
 .workspace-ribbon-collapse-btn:hover,
