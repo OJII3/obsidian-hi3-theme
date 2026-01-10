@@ -62,10 +62,10 @@
   --ribbon-background: var(--color-dark);
   --ribbon-background-collapsed: var(--color-dark);
 
-  --titlebar-background: var(--color-dark);
-  --titlebar-background-focused: var(--color-dark-alt);
-  --titlebar-text-color: #FFFFFF;
-  --titlebar-text-color-focused: #FFFFFF;
+  --titlebar-background: #F5F5F5;
+  --titlebar-background-focused: #FFFFFF;
+  --titlebar-text-color: var(--color-dark);
+  --titlebar-text-color-focused: var(--color-dark);
 
   --tab-background-active: var(--background-primary);
   --tab-text-color: #666666;
@@ -863,6 +863,47 @@ progress::-webkit-progress-bar {
 /* Tree connector lines */
 .theme-light .nav-folder-children {
   border-left-color: var(--color-orange);
+}
+
+/* Sidebar bottom area */
+.theme-light .sidebar-toggle-btn {
+  background-color: #F5F5F5;
+  color: var(--color-dark);
+}
+
+.theme-light .sidebar-toggle-btn:hover {
+  color: var(--color-orange);
+}
+
+.theme-light .workspace-drawer-vault-switcher {
+  background-color: #F5F5F5;
+}
+
+.theme-light .workspace-drawer-header {
+  background-color: #F5F5F5;
+}
+
+/* Tab header area */
+.theme-light .workspace-tab-header-container {
+  background-color: #F5F5F5 !important;
+}
+
+.theme-light .workspace-tab-header-tab-list {
+  background-color: #F5F5F5;
+}
+
+/* Top titlebar area */
+.theme-light .titlebar {
+  background-color: #F5F5F5 !important;
+}
+
+.theme-light .titlebar-inner {
+  background-color: #F5F5F5;
+}
+
+.theme-light .mod-top .workspace-tab-header-container {
+  background-color: #F5F5F5 !important;
+  border-bottom: 2px solid var(--color-orange);
 }
 
 /* Tags - solid cyan */
