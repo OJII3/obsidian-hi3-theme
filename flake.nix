@@ -1,5 +1,5 @@
 {
-  description = "HI3 Starfall - Obsidian theme inspired by Honkai Impact 3rd";
+  description = "Obsidian theme inspired by Honkai Impact 3rd";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
