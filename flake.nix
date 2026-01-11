@@ -25,14 +25,14 @@
         {
           default = pkgs.stdenvNoCC.mkDerivation {
             pname = "obsidian-hi3-theme";
-            version = "1.0.0";
+            version = "1.1.0";
 
             src = ./.;
 
             installPhase = ''
               runHook preInstall
-              mkdir -p $out/share/obsidian/themes/HI3\ Starfall
-              cp manifest.json theme.css $out/share/obsidian/themes/HI3\ Starfall/
+              mkdir -p $out
+              cp manifest.json theme.css $out/
               runHook postInstall
             '';
 
